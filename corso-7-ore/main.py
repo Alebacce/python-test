@@ -60,5 +60,23 @@ print(type(f))
 # Il tipo boolean si scrive in Maiuscolo
 x = True      # Va bene
 x = False
+is_true = True
 # x = true      NON va bene
+print(type(x))
+
+# Tipi di dati "listosi":
+#list
+x = ["Roma", "Genova", "Tirana"]
+print(type(x))
+#tuple
+x = ("Roma", "Genova", "Tirana")
+print(type(x))
+#range
+x =  range(6) # Genera varori da 0 a 5 al runtime, anziché scrivere [0, 1, 2, 3, 4, 5]
+print(type(x))
+#  dict
+x = {"nome": "Alessandro", "eta": 29}
+print(type(x))
+#set
+x = {"Roma", "Genova", "Tirana"}
 print(type(x))
