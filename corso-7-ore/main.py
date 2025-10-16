@@ -34,9 +34,31 @@ print(y)
 a = b = c = 99
 print(a, b, c)
 
-# Array
+# lista
 città = ["Roma", "Genova", "Tirana"]
-# A ogni var assegna un valore dell'array
+# A ogni var assegna un valore della lista
 x, y, z = città
 # Notare che x, y, z cambiano di tipo da int a stringhe
 print(x, y, z)
+
+x = 8
+y = 10
+z = x + y
+print(z)
+# Figata:
+z = x + y + x + y
+print(z)
+print(type(z))
+
+# Il tipo cambia alla riassegnazione di un valore,
+# un float diventa stringa, flessibile ma 👀...
+f = 5.5
+print(type(f))
+f = "belandi"
+print(type(f))
+
+# Il tipo boolean si scrive in Maiuscolo
+x = True      # Va bene
+x = False
+# x = true      NON va bene
+print(type(x))
