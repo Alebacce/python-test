@@ -80,3 +80,24 @@ print(type(x))
 #set
 x = {"Roma", "Genova", "Tirana"}
 print(type(x))
+
+# Casting
+x = "5"
+y = 5
+
+# NON funziona come Javascript che si possono sommare stringa e numero
+# print (x + y) Da errore!!!
+# print (y + x) Anche qua!!
+
+# Per far funzionare faccio
+# In un caso:
+y = str(5) # castato a stringa
+print(x + y) # concatena ed esece 55
+
+y = 5
+x = int(x) # qui casta la stringa in int
+print(x + y) # ed esce 10
+
+x = float(x)
+print(x) # diventa 5.0
+print(type(x)) # e ovviamente tipo float
