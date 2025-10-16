@@ -152,3 +152,25 @@ prova = "Ciao sono Ale e sono nato il {2} giugno, peso {0}kg e sono alto {1}cm" 
 print(prova.format(90, 190, 9)) # e inserisco i valori in ordine di indice
 prova = "ciao sono \"figo\"" # escape
 prova = 'porca l\'oca' #escape
+
+#--------------------------------------------------------
+# Booleani
+print(11 < 10)
+
+if 5 < 10:
+    print("sono minore di 10") 
+else:
+    print("sono maggiore di 10")
+
+# Il metodo bool valuta il valore booleano di un'espressione
+print(bool(1))
+
+# valori falsy
+bool(False)
+bool(None)
+bool(0)
+bool("")
+bool(())
+bool([])
+bool({})
+
