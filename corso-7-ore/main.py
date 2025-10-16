@@ -174,3 +174,18 @@ bool(())
 bool([])
 bool({})
 
+#--------------------------------------------------------
+# Operazioni aritmetiche
+
+# +, -, *, /, %(modulo, ossia il resto), **(potenza), //(floor division, il risultato della divisione arrotondato per difetto)
+
+x = 5
+y = 9
+
+print(y ** x) # eleva 9 alla 5
+print(15 / 7) # fa 2.142857142857143
+print(15 // 7) # fa 2
+
+x = x + 2
+x+=2
+
