@@ -1,4 +1,5 @@
-# Sono un commento
+# #--------------------------------------------------------
+# Introduzione
 
 # Metodo per mandare a schermo un messaggio
 
@@ -64,6 +65,7 @@ is_true = True
 # x = true      NON va bene
 print(type(x))
 
+#--------------------------------------------------------
 # Tipi di dati "listosi":
 #list
 x = ["Roma", "Genova", "Tirana"]
@@ -101,3 +103,52 @@ print(x + y) # ed esce 10
 x = float(x)
 print(x) # diventa 5.0
 print(type(x)) # e ovviamente tipo float
+
+#--------------------------------------------------------
+# Stringhe
+
+# Sono entrambe stringhe valide:
+x = 'ciao'
+y = "ciao"
+
+# per fare stringhe multilinea:
+# Con """  """ ne esce un bell'haiku multilinea o... Ungaretti 
+x = """oh belandi
+che bella 
+giornata
+raga"""
+
+# Le stringhe vengono sempre tratatte come array:
+print(x[0]) # stampa 'o'
+# ovviamente anche lo spazio è un carattere della stringa....
+
+print(len(x)) #stampa la lunghezza, ben 35 caratteri...
+
+# ciclare sulle stringhe
+for carattere in "dibris":
+    print(carattere)
+
+# prendere parti di stringa:
+x = "ciao sonoun biscotto"
+print(x[:3]) # stampa "cia" con estremo di arrivo non incluso [0, 3)
+print(x[4:9]) # stampa " sono", [4, 9)
+print(x[-4]) # stampa il quarto carattere partendo dal fondo, quindi 'o'
+print(x[-4:]) # stampa "otto", da -4 a -0
+
+# modificare una stringa
+print(x.upper())
+print(x.lower())
+print(x.replace("o", "p")) # si spiega da solo..
+x = " hey "
+print(x.strip()) # toglie gli spazi davanti e in fondo se ce ne sono
+
+# da errore, va castato il 9
+# prova = "Ciao sono Ale e sono nato il " + 9 + " giugno"
+prova = "Ciao sono Ale e sono nato il {} giugno"
+print(prova.format(9)) # inserisce il 9 al posto di {}
+prova = "Ciao sono Ale e sono nato il {} giugno, peso {}kg e sono alto {}cm"
+print(prova.format(9, 90, 190))
+prova = "Ciao sono Ale e sono nato il {2} giugno, peso {0}kg e sono alto {1}cm" # qui assegno indici
+print(prova.format(90, 190, 9)) # e inserisco i valori in ordine di indice
+prova = "ciao sono \"figo\"" # escape
+prova = 'porca l\'oca' #escape
