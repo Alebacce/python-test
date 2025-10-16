@@ -189,3 +189,8 @@ print(15 // 7) # fa 2
 x = x + 2
 x+=2
 
+print(min(5, 10, 100))
+print(max(5, 10, 100))
+print(abs(-42)) # 42
+print(pow(5, 2)) # fa 25
+
